@@ -10,11 +10,6 @@ class StatusState extends Equatable{
 class StatusInit extends StatusState{
 
 }
-// ignore: must_be_immutable
-class StatusLoaded extends StatusState{
-  StatusData data;
-  StatusLoaded(this.data);
-}
 
 class StatusChange extends StatusState{
   String status;

@@ -1,4 +1,3 @@
-import 'package:esales_training/Component/searchBar.dart';
 import 'package:esales_training/bloc/WarrantyBLoc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -18,8 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: BlocProvider(
-        create: (_)=>WarrantyBLoc(),
+      home: MultiBlocProvider(
+        providers: [
+          BlocProvider(create: (context)=>WarrantyBLoc())
+        ],
           child: HomePage()),
     );
   }

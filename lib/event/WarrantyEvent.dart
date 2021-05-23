@@ -9,8 +9,9 @@ class WarrantyEvent extends Equatable{
 class getWarrantyEvent extends WarrantyEvent{
   DateTime time1;
   DateTime time2;
+  String warrantyCode;
   String status;
-  getWarrantyEvent(this.time1, this.time2, this.status);
+  getWarrantyEvent(this.time1, this.time2, this.status,this.warrantyCode);
 }
 
 class changeWarrantyEvent extends WarrantyEvent{
