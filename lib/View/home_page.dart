@@ -200,7 +200,7 @@ class _HomePageState extends State<HomePage> {
     );
     if (date != null) {
       setState(() {
-        date=pickedDate2;
+        pickedDate2=date;
         warrantyCode=null;
       });
     }
